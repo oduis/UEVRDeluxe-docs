@@ -1,0 +1,29 @@
+# Site settings
+title: Unreal VR Deluxe
+description: > # this means to break the line
+  User friendly app to play normal 2D Steam Games with Unreal Engine in Virtual Reality using UEVR.
+#url: "https://yourusername.github.io" # the base hostname & protocol for your site
+
+# Build settings
+theme: jekyll-theme-cayman
+
+# Author settings
+author:
+  name: Oliver Duis
+
+# Social settings
+social:
+  github: oduis
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+
+# Navigation settings
+navigation:
+  - title: "Home"
+    url: "/index.md"
+  - title: "Submit profile"
+    url: "/SubmitProfile.md"
+  - title: "GitHub"
+    url: "https://github.com/oduis/UnrealVRDeluxe/"
