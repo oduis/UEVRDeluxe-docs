@@ -1,7 +1,9 @@
 Play many Unreal Engine games from your Steam library in Virtual Reality, e.g. with Meta Quest headsets.  
-This app takes [Praydog’s brilliant (UEVR)](https://github.com/praydog/UEVR) backend core, but replaces the UI part with a user-friendly, new one with a profiles database and many new features:
+This app takes [Praydog’s brilliant (UEVR)](https://github.com/praydog/UEVR) back end core, but replaces the UI part with a user-friendly, new one with a profiles database and many new features:
 
 <a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest release</a>
+
+New to UEVR? Read [this step by step beginners tutorial](UEVRTutorial.md)  
 
 ## Integrates with Steam, includes XR Runtime switcher
 Takes you by the hand, filters installed games that might be running Unreal engine, and gives you warnings for problems beginners struggle with:  

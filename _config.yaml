@@ -23,6 +23,8 @@ plugins:
 navigation:
   - title: "Home"
     url: "/index"
+  - title: "UEVR tutorial"
+    url: "/UEVRTutorial"
   - title: "Submit profile"
     url: "/SubmitProfile"
 
