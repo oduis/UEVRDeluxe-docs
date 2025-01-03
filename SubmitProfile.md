@@ -23,8 +23,10 @@ Date when you edited and tested this profile. Pre-filled with todays date.
 - ```remarks```  
 A SHORT (128 chars max.) remark for this profile. This is shown when the user searches the database. It should helps him to select the right profile. Can be left empty.
 Most descriptions go into the MD file, not here.
+- ```lateInjection```  
+Some game cannot inject from the start, but should inject manually when the user enterd the game. Set this to ```true``` if your game needs it.
 - ```nullifyPlugins```  
-Some game come with plug-ins that interfere with UEVR. Standard is to block these plug-ins. If the game needs them and breaks, set it to ```false```
+Some game come with plug-ins that interfere with UEVR. Standard is to not block these plug-ins. If the game needs them and breaks, set it to ```true```
 
 #### 2.2 Edit ```ProfileDescription.md```
 This is the full description in [Markdown format](https://www.markdownguide.org/basic-syntax/). You can either edit the file with any text editor, use Visual Studio Code (built in preview support), or one of the many online editors like [Dillinger](https://dillinger.io/).
