@@ -42,7 +42,7 @@ The latest releases can always be found here on GitHub:
 
 ### 6. UEVR Deluxe - Games page
 When starting UEVR Deluxe you will find a list of installed Unreal engine Steam games that *might* work, plus a switcher for the OpenXR runtime - what is it?  
-There are to protocol standards to transfer VR graphics data: OpenVR is the old one. Some older headsets run OpenVR natively, and SteamVR was first built on it.
+There are two protocol standards to transfer VR graphics data: OpenVR is the old one. Some older headsets run OpenVR natively, and SteamVR was first built on it.
 The newer version and recommended protocol is OpenXR. Using OpenXR you can decide what linking app should handle your OpenXR graphics. If you have more than one installed (e.g. to try out different options), choose the one to start the game with here. It is a global option for *all* apps using OpenXR on your PC, not just UEVR Deluxe.
 After selecting your OpenXR runtime (if necessary), just click the game to start.
 
