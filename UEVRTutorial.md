@@ -82,3 +82,6 @@ You can typically also play with the keyboard and mouse, using just the VR 3D vi
 Connecting your 3D controllers to e.g. your hand or weapons greatly increases the immersion (6DOF).
 However, if you have no preset profile from the "Search online" database, it is pretty complex to set up.
 See some [Youtube in depth tutorials](https://www.youtube.com/watch?v=4ccaX8Hr1JU) for more details.
+
+### Question?
+Ask [in the flat2vr-forum on Discord](https://discord.com/channels/747967102895390741/1020440446389993542)

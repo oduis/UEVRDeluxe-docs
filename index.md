@@ -29,4 +29,5 @@ No. But it does no harm to have them installed in parallel, if they are not used
 Follow [this guide](SubmitProfile.md)
 ### What UEVR version is it based on?  
 Currently always the current nightly version when published. But you can replace the UEVR DLLs manually with another versions if you like.
-
+### Question?
+Ask [in the flat2vr-forum on Discord](https://discord.com/channels/747967102895390741/1020440446389993542)
