@@ -1,5 +1,5 @@
 Play many Unreal Engine games from your Steam/EPIC library in Virtual Reality, e.g. with Meta Quest headsets.  
-This app takes [Praydog’s brilliant (UEVR)](https://github.com/praydog/UEVR) back end core, but replaces the UI part with a user-friendly, new one with a profiles database and many new features:  
+This app takes [Praydog’s brilliant (UEVR)](https://github.com/praydog/UEVR) magic back end core, but replaces the UI part with a user-friendly, new one with a profiles database and many new features:  
 
 <a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest release</a>
 
@@ -25,9 +25,7 @@ Containing the most used options to get you going:
 This is open source and free. However you are encouraged to support the author of the UEVR here: [Praydogs Patreon](https://patreon.com/praydog)
 ### Do I need UEVR Injector installed?  
 No. But it does no harm to have them installed in parallel, if they are not used on the same games.
-### I have a great profile. How to add it to the UEVRDeluxe database?
+### I have a great profile. How to add it to the UEVR Easy Injector database?
 Follow [this guide](SubmitProfile.md)
 ### What UEVR version is it based on?  
 Currently always the current nightly version when published. But you can replace the UEVR DLLs manually with another versions if you like.
-### Question?
-Ask [in the flat2vr-forum on Discord](https://discord.com/channels/747967102895390741/1020440446389993542)

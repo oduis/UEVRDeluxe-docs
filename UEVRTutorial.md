@@ -1,4 +1,4 @@
-## How to get started with UEVRDeluxe?
+## How to get started with UEVR Easy Injector?
 New to UEVR, and you want to play 2D PC Steam games in Virtual Reality e.g. using your Meta Quest headset? This is how to get started.  
 
 ### 1. Make sure your PC can handle it
@@ -8,8 +8,8 @@ If the game you want to play does not even run with high frame rates in high res
 
 ### 2. Install your game
 First check if your game is running on Unreal Engine version 4 or higher, which is required for UEVR.
-Simplest way: google/bing you games name including " unreal engine version".  
-UEVR Deluxe currently only supports Steam. Install your game via Steam in the normal way.
+Simplest way: google/bing you games name including "unreal engine version".  
+UEVR Easy Injector currently supports Steam and Epic. Install your game via Steam/EPIC in the normal way.
 
 ### 3. Make sure you have fast network connections
 Transferring the VR display data calculated on your PC to your headset requires lots of bandwidth.  
@@ -36,22 +36,22 @@ If your network is weak and you are a Meta Quest user, go for USB on [Meta Quest
 If you search for a free option that is also know to be very stable, go for [SteamVR](https://store.steampowered.com/app/250820/SteamVR/).  
 Except from Meta Quest Link the installation requires an app both on PC as well as on the headset.
 
-### 5. Install UEVR Deluxe
+### 5. Install UEVR Easy Injector
 The latest releases can always be found here on GitHub:  
-<a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest UEVR Deluxe release</a>
+<a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest UEVR Easy Injector release</a>
 
-### 6. UEVR Deluxe - Games page
-When starting UEVR Deluxe you will find a list of installed Unreal engine Steam games that *might* work, plus a switcher for the OpenXR runtime - what is it?  
+### 6. UEVR Easy Injector - Games page
+When starting UEVR Easy Injector you will find a list of installed Unreal engine Steam games that *might* work, plus a switcher for the OpenXR runtime - what is it?  
 There are two protocol standards to transfer VR graphics data: OpenVR is the old one. Some older headsets run OpenVR natively, and SteamVR was first built on it.
-The newer version and recommended protocol is OpenXR. Using OpenXR you can decide what linking app should handle your OpenXR graphics. If you have more than one installed (e.g. to try out different options), choose the one to start the game with here. It is a global option for *all* apps using OpenXR on your PC, not just UEVR Deluxe.
+The newer version and recommended protocol is OpenXR. Using OpenXR you can decide what linking app should handle your OpenXR graphics. If you have more than one installed (e.g. to try out different options), choose the one to start the game with here. It is a global option for *all* apps using OpenXR on your PC, not just UEVR Easy Injector.
 After selecting your OpenXR runtime (if necessary), just click the game to start.
 
-### 7. UEVR Deluxe - select a profile
+### 7. UEVR Easy Injector - select a profile
 You need a profile telling UEVR how to handle the game, how to connect to your controller e.g. to your weapon etc.
 Just hit "Search online" on this page. You will get a list of profiles submitted and tested by the community (since we are at the start there are not many games supported). Just select a profile that looks good and hit the "Install" button.  
 If there is no profile you can create a simple one yourself. Hit the "Add profile" button and select the options. Typically you would try the most performant options first. If the game crashes or shows other graphical issues, go for some more conservative settings.
 
-### 8. UEVR Deluxe - start the game
+### 8. UEVR Easy Injector - start the game
 Make your that you link app is running and you are connected via VR headset to your PC *before* hitting the launch button.  
 UEVR will start the game (if it is not already running) and injects UEVR into game. Continue in your headset.  
 First UEVR shows a menu in-game. You can hide the menu using the "Insert" ("Ins") key on your keyboard, or by pressing both joystick buttons simultaneously.

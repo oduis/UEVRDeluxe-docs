@@ -1,4 +1,4 @@
-## How to submit a UEVRDeluxe game profile to the online database
+## How to submit a UEVR Easy Injector game profile to the online database
 You have built a battle-tested, working profile? This is how to publish it to the community, so everyone can enjoy your work:
 
 ### 1. Test it to make sure quality is good
@@ -32,10 +32,10 @@ Some game come with plug-ins that interfere with UEVR. Standard is to not block 
 This is the full description in [Markdown format](https://www.markdownguide.org/basic-syntax/). You can either edit the file with any text editor, use Visual Studio Code (built in preview support), or one of the many online editors like [Dillinger](https://dillinger.io/).
 
 ### 3. Publish the full profile as Zip
-After having added the description, hit the "Publish" button again. UEVRDeluxe will check some basics, delete temporary files like crash dumps and logs, and pack up a ZIP for you.  
+After having added the description, hit the "Publish" button again. UEVR Easy Injector will check some basics, delete temporary files like crash dumps and logs, and pack up a ZIP for you.  
 The packed profile will have some settings resetted that might be user dependent (e.g. log level, enable depth buffer), but if will leave your local profile alone. So it is NOT the same as zipping the folder yourself ;-).
 
 ### 4. Submit on Discord
-Now post this to the [Discord UE-general channel](https://discord.com/channels/747967102895390741/947806014344925274). Add the two UEVRDeluxe admins @Ashok and @ODuis to make sure it's read. We'll check it briefly and upload it to the clouds database.  
+Now post this to the [Discord UE-general channel](https://discord.com/channels/747967102895390741/947806014344925274). Add the two UEVR Easy Injector admins @Pande4360 and @ODuis to make sure it's read. We'll check it briefly and upload it to the clouds database.  
   
 ### :-) Thanks for helping the community!
