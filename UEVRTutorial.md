@@ -31,7 +31,7 @@ While there are several smaller ones out there, the most widely used and user fr
 | [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/) | Free  | WIFI (Airlink) and USB | Good |
 
 If your network is great, I would highly recommend [Virtual Desktop](https://www.vrdesktop.net/).
-It has the best image encoding, resulting in best image quality if your PC can handle it.  
+It has the best image encoding, upscaling options and frame generion on headset, resulting in best image quality.  
 If your network is weak and you are a Meta Quest user, go for USB on [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/).  
 If you search for a free option that is also know to be very stable, go for [SteamVR](https://store.steampowered.com/app/250820/SteamVR/).  
 Except from Meta Quest Link the installation requires an app both on PC as well as on the headset.

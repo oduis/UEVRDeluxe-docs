@@ -11,7 +11,7 @@ Takes you by the hand, filters installed games that might be running Unreal engi
 ![Main screenshot](assets/ScreenMain.png)
 
 ## Easy to find a profile and start the game
-Profiles of the new working UEVR profile database can contain documentation. No more searching on discord, no more outdated profile websites:  
+Profiles of the new working UEVR profile database can contain documentation. No more searching on discord, no more outdated profile websites. Inject via hotkey while running you game, without tabbing around with headset on:  
 
 ![Game screenshot](assets/ScreenGame.png)
 
