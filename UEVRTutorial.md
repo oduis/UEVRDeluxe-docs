@@ -27,7 +27,7 @@ While there are several smaller ones out there, the most widely used and user-fr
 | [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) | Free | WIFI only | Good |
 | [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/) | Free  | WIFI (Airlink) and USB | Good |
 
-If your network is great, I highly recommend [Virtual Desktop](https://www.vrdesktop.net/).
+If your network is great, and your platform is supported, I highly recommend [Virtual Desktop](https://www.vrdesktop.net/).
 It has the best image encoding, upscaling options and frame generation on headset, resulting in the best image quality.  
 If your network is weak and you are a Meta Quest user, use USB on [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/).  
 If you search for a free option that is also know to be very stable, use [SteamVR](https://store.steampowered.com/app/250820/SteamVR/).  
@@ -36,13 +36,13 @@ Except for Meta Quest Link the installation requires an app both on PC as on the
 #### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
 In the PC app:
 * __Codec__: Leave on "Auto". Best quality is achieved with HVEC/10bit. Although the Quest-exclusive AV1 might be tempting, NVidia cards are better optimized for encoding HVEC, making AV1 less ideal for performance.
-* __Network bandwith__: Leave on auto. Manually increasing bandwidth too much may cause latency hiccups due to network interference in busy environments. Virtual Desktop usually finds the optimal balance.
+* __Network bandwith__: For VR this is set in the "Streamings" tab in the headset app. Do not push this too high, experiment around 50-80 MBit first. Manually increasing bandwidth too much may cause latency hiccups due to network interference in busy environments. It also increases latency, which may cause nausea in virtual reality.
 
 In the headset app's streaming settings:
 * __VR frame rate__: Set higher to reduce flickering (even if your PC cannot render at, for example, 120Hz).
 * Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a good on device AI upscaling
-* __Synchronous Spacewarp__: Set to "Auto". It increases the frame rate and works in conjunction with Super Resolution. Be aware that this may cause flickering in elements like health bar HUD overlays.
-* __Sharpening__: Reduce to the small value, as Super Resolution will provide superior sharpening.
+* __Synchronous Spacewarp__: Set to "Auto". It increases the frame rate and works in conjunction with Super Resolution. Be aware that this may cause flickering in elements like health bar HUD overlays. So if your PC is powerful enough, OFF will give you better quality.
+* __Sharpening__: Reduce to zero or a small value, as Super Resolution will provide superior sharpening.
 * __Color Vibrance__: Consider enabling "Increase color vibrance" and disabling "Increase nominal range" to prevent blown-out shadows.
 
 ### 5. Install UEVR Easy Injector

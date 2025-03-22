@@ -7,7 +7,7 @@ UEVR for the casual user, mass market compatible. ;-)
 
 New to UEVR? Read [this step by step beginners tutorial](UEVRTutorial.md)  
 
-## Integration with Steam, EPIC, and GOG,
+## Integration with Steam, EPIC, XBox Gaming and GOG
 Guides you through the process, filters installed games that may be using Unreal Engine, and provides warnings for common issues that beginners face. 
 One click update to latest UEVR nightly backend version.
 
@@ -37,6 +37,8 @@ No, this is free (for non commercial use). However, you are encouraged to suppor
 No, it is not necessary. However, it does no harm to have it installed in parallel, as long as it is not used on the same games.
 ### Can I use game profiles not in the database (e.g. installed manually from Discord)?
 Sure, just like with UEVR classic.
+### My Steam game is installed and based on Unreal Engine, but not showing up
+Shut down Steam and Restart it. Then rescan in UEVR Easy Injector. Alternatively just reboot, start Steam, then UEVR Easy Injector.
 ### I have a great profile. How to add it to the UEVR Easy Injector database?
 Follow [this guide](SubmitProfile.md)
 ### What UEVR version is it based on?
