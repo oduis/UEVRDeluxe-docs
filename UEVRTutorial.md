@@ -35,34 +35,42 @@ Except for Meta Quest Link the installation requires an app both on PC as on the
 
 #### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
 In the PC app:
-* __Codec__: Leave on "Auto". Best quality is achieved with HVEC/10bit. Although the Quest-exclusive AV1 might be tempting, NVidia cards are better optimized for encoding HVEC, making AV1 less ideal for performance.
-* __Network bandwith__: For VR this is set in the "Streamings" tab in the headset app. Do not push this too high, experiment around 50-80 MBit first. Manually increasing bandwidth too much may cause latency hiccups due to network interference in busy environments. It also increases latency, which may cause nausea in virtual reality.
+* __Codec__: Leave on "Auto". Best quality is achieved with HVEC/10bit. Although the Quest-exclusive AV1 might be tempting, NVidia cards are better optimized for encoding HVEC, making AV1 less ideal for performance. AV1 also tends to soften the image. The compression gains of AV1 are irrelevant at that high bitrates.
 
 In the headset app's streaming settings:
-* __VR frame rate__: Set higher to reduce flickering (even if your PC cannot render at, for example, 120Hz).
+* __Network bandwith__: For VR this is set in the "Streamings" tab in the headset app. Do not push this too high, experiment around 50-80 MBit first. Manually increasing bandwidth too much may cause latency hiccups due to network interference in busy environments. It also increases latency, which may cause nausea in virtual reality.
+* __VR frame rate__: Set a bit higher than your PC can handle to reduce flickering.
 * Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a good on device AI upscaling
-* __Synchronous Spacewarp__: Set to "Auto". It increases the frame rate and works in conjunction with Super Resolution. Be aware that this may cause flickering in elements like health bar HUD overlays. So if your PC is powerful enough, OFF will give you better quality.
-* __Sharpening__: Reduce to zero or a small value, as Super Resolution will provide superior sharpening.
+* __Synchronous Spacewarp (SSW)__: Lets your PC just render at half of the desired rate, interpolating the frames inbetween on your headset. Feels much smoother, but be aware that this may cause flickering in elements like health bar HUD overlays.  
+So if your PC is powerful enough, OFF will give you better quality.  
+If you PC struggles, note was frame rate it can push without SSW (use the option "Show performance overlay" in the streaming options). Now set the frame __VR frame rate__ to about double that safe PC framerate and enable SSW. If you leave you VR frame rate too low (e.g. 60Hz), while your PC can push eg. 45 Hz, your PC will render lower than it could. That leads to noticable input lag, though the image seems to be smooth.
+* __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast. Try e.g. 25% as a good starting point.
 * __Color Vibrance__: Consider enabling "Increase color vibrance" and disabling "Increase nominal range" to prevent blown-out shadows.
 
 ### 5. Install UEVR Easy Injector
 The latest releases can always be found here on GitHub:  
 <a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest UEVR Easy Injector release</a>
 
-### 6. UEVR Easy Injector - Games page
-When you start UEVR Easy Injector, you'll see a list of installed Unreal Engine Steam games that __might__ work, along with a switcher for the OpenXR runtime. But what is OpenXR?  
-There are two protocol standards for transferring VR graphics data: OpenVR and OpenXR. OpenVR is the older standard, used by some older headsets and initially by SteamVR.  
-OpenXR is the newer and recommended protocol. It allows you to choose which linking app should handle your OpenXR graphics. If you have multiple linking apps installed (to try out different options), you can select the one to start the game with here. This setting is a global option for *all* apps using OpenXR on your PC, not just UEVR Easy Injector.  
+### 6. UEVR Easy Injector - Library page
+When you start UEVR Easy Injector, you'll see a list of installed Unreal Engine Steam/GOG/Xbox/Epic games that __might__ work. Simply click a game to start
+
+### 7. UEVR Easy Injector - Game page
+ 
 After selecting your OpenXR runtime (if necessary), simply click the game to start.
 
-### 7. UEVR Easy Injector - select a profile
+### 8. UEVR Easy Injector - select a profile & runtime
 To ensure UEVR handles the game correctly and connects your controller to in-game elements like weapons, you'll need a profile. Simply click "Search online" on this page to access a list of community-submitted and tested profiles. Since UEVR is relatively new, the number of supported games may be limited. Select a suitable profile and click the "Install" button.
 
 If no profile is available, you can create one yourself. Click the "Add profile" button and configure the options. It's recommended to start with the most performant settings. If the game crashes or exhibits graphical issues, try more conservative settings.
 
+You will find an OpenVR/XR switcher for the runtime above the start button bar. But what is OpenXR?  
+There are two protocol standards for transferring VR graphics data: OpenVR and OpenXR. OpenVR is the older standard, used by some older headsets and initially by SteamVR.  
+OpenXR is the newer and recommended protocol. It allows you to choose which linking app should handle your OpenXR graphics. If you have multiple linking apps installed (to try out different options), you can select the one to start the game with here. This setting is a global option for *all* apps using OpenXR on your PC, not just UEVR Easy Injector. 
+
 Make sure your linking app is running and you are connected to your PC via your VR headset *before* hitting the launch button.  
 UEVR will start the game (if it is not already running) and inject UEVR into the game. Continue in your headset.  
 Initially, UEVR will display a menu in-game. You can hide the menu by pressing the "Insert" ("Ins") key on your keyboard or by pressing both joystick buttons simultaneously.
+Some games are better injected when started. These games will just launch, but you have to inject again on the page e.g. when you already started the game, in the 3D world.
 
 ### 9. Mastering in-game controls
 If the game supports gamepads, your VR controllers will function like a gamepad. You can typically use the joystick and the A button to navigate the menus:
@@ -87,9 +95,6 @@ Note the counterintuitive mapping of the buttons B/X/Y.
 You can typically also play with the keyboard and mouse, using just the VR 3D view.
 
 ### 10. Connecting your controllers motion controls
-Connecting your 3D controllers to e.g. your hand or weapons greatly increases the immersion (6DOF).
+Connecting your 3D controllers to e.g. your hand or weapons greatly increases the immersion (6DOF - six degrees of freedom).
 However, if you have no preset profile from the "Search online" database, it is pretty complex to set up.
 See some [Youtube in depth tutorials](https://www.youtube.com/watch?v=4ccaX8Hr1JU) for more details.
-
-### Question?
-Ask [in the flat2vr-forum on Discord](https://discord.com/channels/747967102895390741/1020440446389993542)

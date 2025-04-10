@@ -41,6 +41,6 @@ Sure, just like with UEVR classic.
 Shut down Steam and Restart it. Then rescan in UEVR Easy Injector. Alternatively just reboot, start Steam, then UEVR Easy Injector.
 ### I have a great profile. How to add it to the UEVR Easy Injector database?
 Follow [this guide](SubmitProfile.md)
-### What UEVR version is it based on?
-Currently the current nightly version that looks stable when published. But you can just click on Update button to download the latest nightly automatically.  
-Beware though that some UEVR nightly versions can contain new bugs.
+### What UEVR version is it based on? Can I use another?
+Currently the current nightly version that looks stable when published. But you can just click on Update button to download the latest nightly automatically. Beware though that some UEVR nightly versions can contain new bugs.  
+You can download any older UEVR version you like by simply replacing the dlls found in the UEVR subfolder of your installation folder (e.g. C:\Program Files\Unreal VR Easy Injector\UEVR)
