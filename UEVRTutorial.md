@@ -52,7 +52,7 @@ The latest releases can always be found here on GitHub:
 <a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest UEVR Easy Injector release</a>
 
 ### 6. UEVR Easy Injector - Library page
-When you start UEVR Easy Injector, you'll see a list of installed Unreal Engine Steam/GOG/Xbox/Epic games that __might__ work. Simply click a game to start
+When you start UEVR Easy Injector, you'll see a list of installed Unreal Engine Steam/GOG/Xbox/Epic games that __might__ work. Simply click a game to start.
 
 ### 7. UEVR Easy Injector - Game page
  

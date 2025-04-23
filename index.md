@@ -7,7 +7,7 @@ UEVR for the casual user, mass market compatible. ;-)
 
 New to UEVR? Read [this step by step beginners tutorial](UEVRTutorial.md)  
 
-## Integration with Steam, EPIC, XBox Gaming and GOG
+## Integration with Steam, EPIC, XBox Gaming, EA Games and GOG
 Guides you through the process, filters installed games that may be using Unreal Engine, and provides warnings for common issues that beginners face. 
 One click update to latest UEVR nightly backend version.
 
@@ -29,6 +29,8 @@ Inject via hotkey while running your game, without needing to tab around with yo
 Configure easy to use voice commands per game. Little performance overhead on RAM/CPU:
 
 ![Game screenshot](assets/EditVoiceCommands.png)
+
+(do NOT run app as administrator for voice commands)
 
 ## Frequently Asked Questions
 ### Does it cost anything?
