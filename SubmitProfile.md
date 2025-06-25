@@ -3,7 +3,7 @@ You have built a battle-tested, working profile? This is how to publish it to th
 
 ### 1. Test it to make sure quality is good
 Many games run with some little glitches, but test it before submitting:
-- Play the game yourself for more than just 5 minutes (in cases it crashes e.g. later on cutscenes etc.)
+- Play the game yourself for more than just 5 minutes (in case it crashes e.g. later on cutscenes etc.)
 - Even better: Have the community on [Discord UE-Games](https://discord.com/channels/747967102895390741/1062167556129030164) test it
 
 ### 2. Add descriptions
@@ -16,17 +16,36 @@ Please leave the default filled fields like EXEName alone. Edit these fields:
 Add your name here. Again just a short name, not a bio ;-)
 - ```gameVersion```  
 SHORT text info on what version of the game the profile is tested with. Sometimes game updates require newer profiles, so this is important.
-- ```minUEVRVersionDay```  
-If your profile needs a newer UEVR version you can state the minimum date of the version (code submission date) here. Leave the default (2024-10-31 for official 1.05) if you have not special needs.
+- ```minUEVRNightlyNumber```  
+If your profile needs a newer UEVR version you can state the minimum nightly number of the version. Omit this entry if you have no special requirements.
+- ```maxUEVRNightlyNumber```  
+If your profile has issues with newer UEVR versions you can state the maximum nightly number of the version. Omit this  entry if you have no special requirements.
 - ```modifiedDate```  
 Date when you edited and tested this profile. Pre-filled with todays date.
 - ```remarks```  
 A SHORT (128 chars max.) remark for this profile. This is shown when the user searches the database. It should helps him to select the right profile. Can be left empty.
 Most descriptions go into the MD file, not here.
 - ```lateInjection```  
-Some game cannot inject from the start, but should inject manually when the user enterd the game. Set this to ```true``` if your game needs it.
+Some game cannot inject from the start, but should inject manually e.g. when the user entered the game. Set this to ```true``` if your game needs it.
 - ```nullifyPlugins```  
 Some game come with plug-ins that interfere with UEVR. Standard is to not block these plug-ins. If the game needs them and breaks, set it to ```true```
+
+Here is an example ```ProfileMeta.json```:
+
+```
+{
+  "ID": "00000000-0000-0000-0000-000000000000",
+  "exeName": "SixDays-Win64-Shipping",
+  "gameName": "Six Days in Fallujah",
+  "gameVersion": "Patch 0.4.1 or higher",
+  "authorName": "ODuis",
+  "minUEVRNightlyNumber": 1091,
+  "nullifyPlugins": false,
+  "lateInjection": false,
+  "modifiedDate": "2025-02-09T00:00:00+01:00",
+  "remarks": "Profile also works in daylight"
+}
+```
 
 #### 2.2 Edit ```ProfileDescription.md```
 This is the full description in [Markdown format](https://www.markdownguide.org/basic-syntax/). You can either edit the file with any text editor, use Visual Studio Code (built in preview support), or one of the many online editors like [Dillinger](https://dillinger.io/).
