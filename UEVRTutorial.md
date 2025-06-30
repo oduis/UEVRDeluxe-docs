@@ -1,21 +1,23 @@
 ## How to get started with UEVR Easy Injector
-New to UEVR and want to play 2D PC Steam games in Virtual Reality using your Meta Quest headset? Here's how to get started.
+New to UEVR and want to play common flatscreen PC games in Virtual Reality using your e.g. Meta Quest headset? Here's how to get started.
 
 ### 1. Ensure your PC can handle it
-VR requires rendering at a very high resolution, and the experience is sensitive to low frame rates. Therefore, you need a modern, powerful PC. Your graphics card should be particularly strong and have ample VRAM for the high resolution. If the game you want to play does not achieve high frame rates at high resolutions in 2D, it is unlikely to perform well in VR.
+VR requires rendering at a very high resolution, and the experience is sensitive to low frame rates. Therefore, you need a modern, powerful PC. Your graphics card should be particularly strong and have ample VRAM for the high resolution. If the game you want to play does not achieve high frame rates at high resolutions in normal flatscreen, it is unlikely to perform well in VR.
 
 ### 2. Install your game
-First, check if your game runs on Unreal Engine version 4 or higher, which is required for UEVR. The simplest way to do this is by searching the game's name along with "Unreal Engine version" on Google or Bing. UEVR Easy Injector currently supports Steam and Epic. Install your game via Steam or Epic as you normally would.
+First, check if the game runs on Unreal Engine version 4 or higher, which is required for UEVR (very latest versions of the engine might also causes problems). The simplest way to do this is by searching the game's name along with "Unreal Engine version" on Google or Bing. UEVR Easy Injector currently supports Steam, Epic, GOG and XBox. Install the game via these stores just normally. Privated versions installed outside of these stores are not supported.
 
 ### 3. Ensure you have a fast network connection to your headset
-Transferring VR display data from your PC to your headset requires a lot of bandwidth.
+Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth.
 
-- If you have a good Wifi/LAN connection - go for WIFI connection  
-Is your PC connected to your router via LAN? Is your network router modern (preferably WIFI6/6E/7)? 
-Is your network channel idle and not congested with other neighborhood networks or other devices using much bandwith?  
-(The Windows built-in Hotspot feature often has reliability issues under high CPU load and suboptimal Wifi card settings, so it is not a replacement for a modern router)
+- If you have a **good Wifi and LAN connection**  - go for WIFI connection
 
-- no good network - go for USB cable connection  
+	- Is your PC connected to your router via LAN?
+	- Is your network router modern (preferably WIFI6/6E/7)?  
+	(The Windows built-in Hotspot feature often has reliability issues under high CPU load and suboptimal Wifi card settings, so it is not a replacement for a modern router)
+	- Is your network channel idle and not congested with other neighborhood networks or other devices using much bandwith? 
+
+- **no good network** - go for **USB cable** connection  
 Though it sounds like a better bet to simply always use USB, it will reduce your options. Better go for WIFI if you can.
 
 ### 4. Choose and install an app to link your headset to your PC
@@ -31,20 +33,20 @@ If your network is great, and your platform is supported, I highly recommend [Vi
 It has the best image encoding, upscaling options and frame generation on headset, resulting in the best image quality.  
 If your network is weak and you are a Meta Quest user, use USB on [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/).  
 If you search for a free option that is also know to be very stable, use [SteamVR](https://store.steampowered.com/app/250820/SteamVR/).  
-Except for Meta Quest Link the installation requires an app both on PC as on the headset.
+Except for Meta Quest Link (only PC) the installation requires an app both on PC as on the headset.
 
 #### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
 In the PC app:
 * __Codec__: Leave on "Auto". Best quality is achieved with HVEC/10bit. Although the Quest-exclusive AV1 might be tempting, NVidia cards are better optimized for encoding HVEC, making AV1 less ideal for performance. AV1 also tends to soften the image. The compression gains of AV1 are irrelevant at that high bitrates.
 
 In the headset app's streaming settings:
-* __Network bandwith__: For VR this is set in the "Streamings" tab in the headset app. Do not push this too high, experiment around 50-80 MBit first. Manually increasing bandwidth too much may cause latency hiccups due to network interference in busy environments. It also increases latency, which may cause nausea in virtual reality.
+* __Network bandwith__: For VR this is set in the "Streamings" tab in the headset app. Do not push this too high, experiment around 50-80 MBit first. Manually increasing bandwidth too much may cause latency hiccups due to network interference in busy environments. It also increases latency, which may cause nausea in virtual reality. You won't notice much image quality differences going higher for common headsets resolutions.
 * __VR frame rate__: Set a bit higher than your PC can handle to reduce flickering.
-* Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a good on device AI upscaling
-* __Synchronous Spacewarp (SSW)__: Lets your PC just render at half of the desired rate, interpolating the frames inbetween on your headset. Feels much smoother, but be aware that this may cause flickering in elements like health bar HUD overlays.  
+* Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a great on device AI upscaling. Sharper image, no downsides.
+* __Synchronous Spacewarp (SSW)__: Lets your PC just render at half of the desired rate, interpolating the frames inbetween on your headset, also using half the network bandwidth. Feels much smoother, but be aware that this may cause flickering in elements like health bar HUD overlays that do not move the same way as the world view.  
 So if your PC is powerful enough, OFF will give you better quality.  
-If you PC struggles, note was frame rate it can push without SSW (use the option "Show performance overlay" in the streaming options). Now set the frame __VR frame rate__ to about double that safe PC framerate and enable SSW. If you leave you VR frame rate too low (e.g. 60Hz), while your PC can push eg. 45 Hz, your PC will render lower than it could. That leads to noticable input lag, though the image seems to be smooth.
-* __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast. Try e.g. 25% as a good starting point.
+If you PC struggles, note what frame rate it can push without SSW (use the option "Show performance overlay" in the streaming options). Now set the frame __VR frame rate__ to about double that safe PC framerate and enable SSW. If you leave you VR frame rate too low (e.g. 60Hz), while your PC can push eg. 45 Hz, your PC will render lower than it could. That leads to noticable input lag, though the image seems to be smooth.
+* __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast, often looking better. Try e.g. 20-25% as a good starting point.
 * __Color Vibrance__: Consider enabling "Increase color vibrance" and disabling "Increase nominal range" to prevent blown-out shadows.
 
 ### 5. Install UEVR Easy Injector
@@ -55,7 +57,6 @@ The latest releases can always be found here on GitHub:
 When you start UEVR Easy Injector, you'll see a list of installed Unreal Engine Steam/GOG/Xbox/Epic games that __might__ work. Simply click a game to start.
 
 ### 7. UEVR Easy Injector - Game page
- 
 After selecting your OpenXR runtime (if necessary), simply click the game to start.
 
 ### 8. UEVR Easy Injector - select a profile & runtime
@@ -70,10 +71,10 @@ OpenXR is the newer and recommended protocol. It allows you to choose which link
 Make sure your linking app is running and you are connected to your PC via your VR headset *before* hitting the launch button.  
 UEVR will start the game (if it is not already running) and inject UEVR into the game. Continue in your headset.  
 Initially, UEVR will display a menu in-game. You can hide the menu by pressing the "Insert" ("Ins") key on your keyboard or by pressing both joystick buttons simultaneously.
-Some games are better injected when started. These games will just launch, but you have to inject again on the page e.g. when you already started the game, in the 3D world.
+Some games are better injected when already started, otherwise they might crash or show black screens. These games will just launch, but you have to inject again on the page e.g. when you already started the game, in the 3D world. While having UEVR Easy Injector running, just press the Ctrl-Alt-U while in the game to inject.
 
 ### 9. Mastering in-game controls
-If the game supports gamepads, your VR controllers will function like a gamepad. You can typically use the joystick and the A button to navigate the menus:
+If the game supports gamepads, your VR controllers will function like a gamepad. You can typically use the joystick and the "A" button to navigate the menus:
 
 | VR controller button... | ...will function as game button |
 |----------------------|------------------------------|
