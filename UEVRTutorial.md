@@ -37,10 +37,14 @@ Except for Meta Quest Link (only PC) the installation requires an app both on PC
 
 #### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
 In the PC app:
-* __Codec__: Leave on "Auto". Best quality is achieved with HVEC/10bit. Although the Quest-exclusive AV1 might be tempting, NVidia cards are better optimized for encoding HVEC, making AV1 less ideal for performance. AV1 also tends to soften the image. The compression gains of AV1 are irrelevant at that high bitrates.
+* __Codec__: The "Auto" setting usually makes asensible selection.  
+The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast Wi-Fi connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.
+AV1 and HEVC codes also come in 10-bit color variants (compared to the standard 8-bit). These deliver less banding and more detail, mostly visible in dark scenes.  
+There is no real performance difference when using modern NVidia cards, since they have seperate hardware encoding paths, so not affecting your game performance.
+* __Encrypt local traffic__: Switch this OFF
 
 In the headset app's streaming settings:
-* __Network bandwith__: For VR this is set in the "Streamings" tab in the headset app. Do not push this too high, experiment around 50-80 MBit first. Manually increasing bandwidth too much may cause latency hiccups due to network interference in busy environments. It also increases latency, which may cause nausea in virtual reality. You won't notice much image quality differences going higher for common headsets resolutions.
+* __Network bandwith__: For VR this is set in the "Streamings" tab in the headset app. Do not push this too high, experiment around 50-80 MBit first, depending on the codec and wifi situation. Manually increasing bandwidth too much may cause hiccups due to network interference in busy environments. It also increases latency a bit.
 * __VR frame rate__: Set a bit higher than your PC can handle to reduce flickering.
 * Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a great on device AI upscaling. Sharper image, no downsides.
 * __Synchronous Spacewarp (SSW)__: Lets your PC just render at half of the desired rate, interpolating the frames inbetween on your headset, also using half the network bandwidth. Feels much smoother, but be aware that this may cause flickering in elements like health bar HUD overlays that do not move the same way as the world view.  
