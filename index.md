@@ -1,4 +1,4 @@
-Play numerous Unreal Engine games from your Steam or EPIC library in Virtual Reality, such as with Meta Quest headsets.
+Play numerous Unreal Engine games in Virtual Reality, such as with Meta Quest headsets.
 This app takes [Praydog’s brilliant (UEVR)](https://github.com/praydog/UEVR) magic module, but replaces the UI part with a user-friendly, new one.   
 It adds features like an **online profiles database, voice commands, user friendly profiles editor and UEVR Nightly updates with one click**.  
 UEVR for the casual user, mass market compatible  ;-)  

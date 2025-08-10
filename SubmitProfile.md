@@ -15,6 +15,6 @@ After having added the description, hit the "Publish" button again. UEVR Easy In
 The packed profile will have some settings resetted that might be user dependent (e.g. log level, enable depth buffer), but if will leave your local profile alone. So it is NOT the same as zipping the folder yourself ;-).
 
 ### 4. Submit on Discord
-Now post this to the [Discord UE-general channel](https://discord.com/channels/747967102895390741/947806014344925274). Add the two UEVR Easy Injector admins @Pande4360 and @ODuis to make sure it's read. We'll check it briefly and upload it to the clouds database.  
+Now post this to the [Discord Flat2VR #UE-general channel](https://flat2vr.com/). Add the two UEVR Easy Injector admins @Pande4360 and @ODuis to make sure it's read. We'll check it briefly and upload it to the clouds database.  
   
 ### :-) Thanks for helping the community!
