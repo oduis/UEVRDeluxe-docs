@@ -13,6 +13,11 @@ One click update to latest UEVR nightly backend version.
 
 ![Main screenshot](assets/ScreenMain.png)
 
+## Online Profile Database
+Containing many tested profiles from Discord and other sources, constantly updated. Simple one click installation.  
+
+![Profile database](assets/ProfileCatalog.png)
+
 ## Easy Profile Editor
 Includes the most commonly used options with descriptions to help you get started:
 

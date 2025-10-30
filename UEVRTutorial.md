@@ -10,8 +10,8 @@ First, check if the game runs on Unreal Engine version 4 or higher, which is req
 ### 3. Ensure you have a fast network connection to your headset
 Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth.
 
+- If you have a display port connected headset - best option
 - If you have a **good Wifi and LAN connection**  - go for WIFI connection
-
 	- Is your PC connected to your router via LAN?
 	- Is your network router modern (preferably WIFI6/6E/7)?  
 	(The Windows built-in Hotspot feature often has reliability issues under high CPU load and suboptimal Wifi card settings, so it is not a replacement for a modern router)
@@ -26,13 +26,13 @@ While there are several smaller ones out there, the most widely used and user-fr
 | App Name | Price | Network | Image quality |
 |----------|-------|---------|---------------|
 | [Virtual Desktop](https://www.vrdesktop.net/) | One time purchase | WIFI only | Best | 
-| [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) | Free | WIFI only | Good |
+| [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) | Free | WIFI only | Good (best if you have a native SteamVR headset) |
 | [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/) | Free  | WIFI (Airlink) and USB | Good |
 
-If your network is great, and your platform is supported, I highly recommend [Virtual Desktop](https://www.vrdesktop.net/).
+If your network is great, and your platform is supported, I highly recommend [Virtual Desktop](https://www.vrdesktop.net/), espc. on Quest.
 It has the best image encoding, upscaling options and frame generation on headset, resulting in the best image quality.  
 If your network is weak and you are a Meta Quest user, use USB on [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/).  
-If you search for a free option that is also know to be very stable, use [SteamVR](https://store.steampowered.com/app/250820/SteamVR/).  
+If you search for a free option that is also know to be very stable, use [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). This is also the best options if you got a SteamVR native headset.
 Except for Meta Quest Link (only PC) the installation requires an app both on PC as on the headset.
 
 #### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
