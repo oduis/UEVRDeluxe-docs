@@ -29,7 +29,7 @@ While there are several smaller ones out there, the most widely used and user-fr
 | [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) | Free | WIFI only | Good (best if you have a native SteamVR headset) |
 | [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/) | Free  | WIFI (Airlink) and USB | Good |
 
-If your network is great, and your platform is supported, I highly recommend [Virtual Desktop](https://www.vrdesktop.net/), espc. on Quest.
+If your network is great, and your platform is supported, I highly recommend [Virtual Desktop (VD)](https://www.vrdesktop.net/), espc. on Quest.
 It has the best image encoding, upscaling options and frame generation on headset, resulting in the best image quality.  
 If your network is weak and you are a Meta Quest user, use USB on [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/).  
 If you search for a free option that is also know to be very stable, use [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). This is also the best options if you got a SteamVR native headset.
@@ -39,13 +39,13 @@ Except for Meta Quest Link (only PC) the installation requires an app both on PC
 In the PC app:
 * __Codec__: The "Auto" setting usually makes asensible selection.  
 The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast Wi-Fi connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.
-AV1 and HEVC codes also come in 10-bit color variants (compared to the standard 8-bit). These deliver less banding and more detail, mostly visible in dark scenes.  
-There is no real performance difference when using modern NVidia cards, since they have seperate hardware encoding paths, so not affecting your game performance.
+AV1 and HEVC codes also come in 10-bit color variants (compared to the standard 8-bit). These deliver less banding and more detail, mostly visible in dark scenes (the game renders in 8 Bit, the 10 bit is for encoding, which is mostly visible on dark content). However this comes at the cost of higher VRAM usage.   
+There is much less performance difference between the codecs when using modern NVidia cards, since they have seperate hardware encoding paths. HVEC and H.264 make no difference, AVI is a bit slower.
 * __Encrypt local traffic__: Switch this OFF
-* __Sharpening__: on the "Advanced" tab, enable the new sharpening, but try low settings like 10-15% first. This sharpening is pre-enocding, and it helps with small details more than sharpening in the headset.
+* __Sharpening__: on the "Advanced" tab, enable the new sharpening, but try low settings like 10% first. This sharpening is pre-enocding, and it helps with small details more than sharpening in the headset.
 
 In the headset app's streaming settings:
-* __Network bandwith__: For VR this is set in the "Streamings" tab in the headset app. Do not push this too high, experiment around 50-80 MBit first, depending on the codec and wifi situation. Manually increasing bandwidth too much may cause hiccups due to network interference in busy environments. It also increases latency a bit.
+The performance panel in Virtual Desktop or on your Meta Quest headset displays the Wi-Fi speed, but this represents the theoretical maximum link rate. In practice, you can expect your actual usable speed to be about one-third of that value.
 * __VR frame rate__: Set a bit higher than your PC can handle to reduce flickering.
 * Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a great on device AI upscaling. Sharper image, no downsides.
 * __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast, often looking better. But try to sharpen on the PC app first, then add additional sharpening here if needed. It largely depends on the game.

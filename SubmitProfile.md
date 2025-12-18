@@ -8,7 +8,8 @@ Many games run with some little glitches, but test it before submitting:
 
 ### 2. Add descriptions and metadata
 Many games need special graphic settings to look good in VR, or need some remarks on what workarounds are needed for glitches. Add this information in the "Edit profile". 
-It is stored in the files ```ProfileMeta.json``` and ```ProfileDescription.md``` which you can edit directly without GUI. 
+It is stored in the files ```ProfileMeta.json``` and ```ProfileDescription.md``` which you can edit directly without GUI.
+The ProfileMeta.json also allows auto-installation of .pak files 
 
 ### 3. Publish the full profile as Zip
 After having added the description, hit the "Publish" button again. UEVR Easy Injector will check some basics, delete temporary files like crash dumps and logs, and pack up a ZIP for you.  
