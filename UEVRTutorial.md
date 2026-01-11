@@ -4,8 +4,20 @@ New to UEVR and want to play common flatscreen PC games in Virtual Reality using
 ### 1. Ensure your PC can handle it
 VR requires rendering at a very high resolution, and the experience is sensitive to low frame rates. Therefore, you need a modern, powerful PC. Your graphics card should be particularly strong and have ample VRAM for the high resolution. If the game you want to play does not achieve high frame rates at high resolutions in normal flatscreen, it is unlikely to perform well in VR.
 
-### 2. Install your game
+### 2. Install and prepare your game
+#### 2.1. Unreal games only
 First, check if the game runs on Unreal Engine version 4 or higher, which is required for UEVR (very latest versions of the engine might also causes problems). The simplest way to do this is by searching the game's name along with "Unreal Engine version" on Google or Bing. UEVR Easy Injector currently supports Steam, Epic, GOG and XBox. Install the game via these stores just normally. Privated versions installed outside of these stores are not supported.
+#### 2.2. Common ingame settings
+If the game supports it, adjust these in-game graphic settings:
+- Chromatic aberration: OFF
+- Motion blur: OFF
+- Depth of field: OFF
+- View/head bobbing: OFF
+- Post processing: typically looks better on LOW
+#### 2.3. Optimize DLSS (Nvidia cards only)
+Since VR is very performance hungry, DLSS is usually needed. Many espc. older games run on outdated DLSS versions though.
+To optimize, try to replace the games DLSS DLLs with latest version using the [DLSS Swapper Tool](https://github.com/beeradmoore/dlss-swapper/releases). If possible, set the DLSS Preset to "K", also using DLSS Swapper (or NVidia native app).  
+You might be tempted to try DLSS 4.5 (presets M and L), but UEVR tests have shown them to be slower and less helpful to upscale high VR resolutions usually not found on desktops. Stick with K.
 
 ### 3. Ensure you have a fast network connection to your headset
 Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth.
