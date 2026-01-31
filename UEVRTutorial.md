@@ -1,27 +1,14 @@
-## How to get started with UEVR Easy Injector
 New to UEVR and want to play common flatscreen PC games in Virtual Reality using your e.g. Meta Quest headset? Here's how to get started. Click on the section headings to open the details.
 
-<details>
-
-<summary>🔽 1. Ensure your PC can handle it</summary>
-
-### 1. Ensure your PC can handle it  
-
+## 1. Ensure your PC can handle it  
 VR requires rendering at a very high resolution, and the experience is sensitive to low frame rates. Therefore, you need a modern, powerful PC. Your graphics card should be particularly strong and have ample VRAM for the high resolution. If the game you want to play does not achieve high frame rates at high resolutions in normal flatscreen, it is unlikely to perform well in VR.
 
-</details>
-
-<details>
-
-<summary>🔽 2. Install and prepare your game</summary>
-
-### 2. Install and prepare your game
-
-#### 2.1. Unreal games only
+## 2. Install and prepare your game
+### 2.1. Unreal games only
 First, check if the game runs on Unreal Engine version 4 or higher, which is required for UEVR (very latest versions of the engine might also causes problems). The simplest way to do this is by google the game's name along with "Unreal Engine version". UEVR Easy Injector currently supports Steam, Epic, GOG and XBox, as well as installations found in Windows uninstall. Install the game via these stores just normally.  
 Pirated versions are not supported.
 
-#### 2.2. Common ingame settings
+### 2.2. Common ingame settings
 If the game supports it, adjust these in-game graphic settings:
 - Chromatic aberration: OFF
 - Motion blur: OFF
@@ -29,54 +16,40 @@ If the game supports it, adjust these in-game graphic settings:
 - View/head bobbing: OFF
 - Post processing: typically looks better on LOW
 
-#### 2.3. Optimize DLSS (Nvidia cards only)
+### 2.3. Optimize DLSS (Nvidia cards only)
 Since VR is very performance hungry, DLSS is usually needed. Many espc. older games run on outdated DLSS versions though.
 To optimize, try to replace the games DLSS DLLs with latest version using the [DLSS Swapper Tool](https://github.com/beeradmoore/dlss-swapper/releases). If possible, set the DLSS Preset to "K", also using DLSS Swapper (or NVidia native app).  
 You might be tempted to try DLSS 4.5 (presets L for Ultra-Performance and M for all the other levesl), but UEVR tests have shown them to be slower (the older the Nvidia card) and less helpful to upscale high VR resolutions usually not found on desktops. The big upgrade is from DLSS V3 to V4. Test with V4.5, but you will probabaly stick with K for best performance.
 
-</details>
-
-<details>
-
-<summary>🔽 3. Ensure you have a fast network connection to your headset</summary>
-
-### 3. Ensure you have a fast network connection to your headset
-
+## 3. Ensure you have a fast network connection to your headset
 Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth. Your options ordered best to worst:
 
-#### 3.1 Display port
+### 3.1 Display port
 If you have a display port connected headset - best option. No compression. Not available for Meta Quest.
 
-#### 3.2 LAN connection (via adapter)
+### 3.2 LAN connection (via adapter)
 Since the Meta Quest operating system is based on Android, it unofficially supports many standard Realtek 1GB USB LAN adapters [like this one](https://www.amazon.de/dp/B0C3GHBLB6). Some 2.5GB adapters may also work, but are typically limited to 1GB speeds.  
 For convenience, consider purchasing a combined power supply and LAN adapter, so your headset can charge while connected to the network at the same time. To avoid having a dongle hanging from your headset, a high-quality USB-C extension cable is recommended.  
 There is no specific setting in Meta Quest to enable USB LAN adapters. Simply turn off Wi-Fi in the settings, power down the headset, connect the USB LAN adapter, and then power the headset back on. It should connect to the network automatically, although some features such as app updates are disabled.  
 If you experience connection issues, check whether the LAN adapter’s LEDs are blinking. Some adapters may enter sleep mode and not show any activity. In such cases, try temporarily connecting the USB LAN adapter to a PC to verify network connectivity and wake it up. If it works on the PC, reconnect it to the Quest.
 
-#### 3.3 WIFI
+### 3.3 WIFI
 If WIFI is a good option if:
 - your PC is connected to your router via LAN
 - your network router is modern (preferably WIFI6/6E/7)  
 	(The Windows built-in Hotspot feature often has reliability issues under high CPU load and suboptimal Wifi card settings, so it is not a replacement for a modern router)
 - your network channel is idle and not congested with other neighborhood networks or other devices using much bandwith
 
-#### 3.4. Fallback: USB
+### 3.4. Fallback: USB
 Though it sounds like a better bet to simply always use USB, it will reduce your options.
 
-</details>
-
-<details>
-
-<summary>🔽 4. Choose and install an app to link your headset to your PC</summary>
-
-### 4. Choose and install an app to link your headset to your PC
-
+## 4. Choose and install an app to link your headset to your PC
 While there are several smaller ones out there, the most widely used and user-friendly ones are:
 
 | App Name | Price | Network | Image quality |
 |----------|-------|---------|---------------|
-| [Virtual Desktop](https://www.vrdesktop.net/) | One time purchase | WIFI only | Best | 
-| [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) | Free | WIFI only | Good (best if you have a native SteamVR headset) |
+| [Virtual Desktop](https://www.vrdesktop.net/) | One time purchase | WIFI/LAN only | Best | 
+| [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) | Free | WIFI/LAN only | Good (best if you have a native SteamVR headset) |
 | [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/) | Free  | WIFI (Airlink) and USB | Good |
 
 If your network is great, and your platform is supported, I highly recommend [Virtual Desktop (VD)](https://www.vrdesktop.net/), espc. on Quest.
@@ -85,7 +58,7 @@ If your network is weak and you are a Meta Quest user, use USB on [Meta Quest Li
 If you search for a free option that is also know to be very stable, use [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). This is also the best options if you got a SteamVR native headset.
 Except for Meta Quest Link (only PC) the installation requires an app both on PC as on the headset.
 
-#### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
+### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
 In the PC app:
 * __Codec__: The "Auto" setting usually makes a sensible selection.  
 The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast Wi-Fi connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.  
@@ -108,37 +81,17 @@ So if your PC is powerful enough, OFF will give you better quality.
 If you PC struggles, note what frame rate it can push without SSW (use the option "Show performance overlay" in the streaming options). Now set the frame __VR frame rate__ to about double that safe PC framerate and enable SSW. If you leave you VR frame rate too low (e.g. 60Hz), while your PC can push eg. 45 Hz, your PC will render lower than it could. That leads to noticable input lag, though the image seems to be smooth.
 * __Color Vibrance__: Consider enabling "Increase color vibrance" and disabling "Increase nominal range" to prevent blown-out shadows.
 
-</details>
-
-<details>
-
-<summary>🔽 5. Install UEVR Easy Injector</summary>
-
-### 5. Install UEVR Easy Injector
+## 5. Install UEVR Easy Injector
 
 The latest releases can always be found here on GitHub:  
 <a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest UEVR Easy Injector release</a>  
 You do not need to download UEVR Classic. UEVR Easy comes with the UEVR backend and does not use the classic installation.
 
-</details>
-
-<details>
-
-<summary>🔽 6. UEVR Easy Injector - Library page</summary>
-
-### 6. UEVR Easy Injector - Library page
-
+## 6. UEVR Easy Injector - Library page
 When you start UEVR Easy Injector, you'll see a list of installed Unreal Engine Steam/GOG/Xbox/Epic games that __might__ work. Simply click a game to start.  
 You can also click on "Profile catalog" at the bottom to see a list for profiles available in the database. You are not restricted to these, you can install any profile from the internet the usual manual way.
 
-</details>
-
-<details>
-
-<summary>🔽 7. UEVR Easy Injector - Download a profile</summary>
-
-### 7. UEVR Easy Injector - Download a profile
-
+## 7. UEVR Easy Injector - Download a profile
 To ensure UEVR handles the game correctly and connects your controller to in-game elements like weapons, you'll need a profile. Simply click "Search online" on this page to access a list of community-submitted and tested profiles. Select a suitable profile (if available) and click the "Install" button.
 
 You can also download and install any profile from e.g. Discord or other websites manually, just like you would do with UEVR Classic.
@@ -147,26 +100,12 @@ If no profile is available, you can create one yourself. Click the "Add profile"
 
 Profiles you download often include instructions for proper use. Some may require additional mods to be installed in the game, or have specific usage steps and workarounds. Be sure to read and follow any instructions provided with the profile to ensure it works correctly.
 
-</details>
-
-<details>
-
-<summary>🔽 8. Select protocol</summary>
-
-### 8. Select protocol
-
+## 8. Select protocol
 You will find an OpenVR/XR switcher for the runtime above the start button bar. But what is OpenXR?  
 There are two protocol standards for transferring VR graphics data: OpenVR and OpenXR. OpenVR is the older standard, used by some older headsets and initially by SteamVR.  
 OpenXR is the newer and recommended protocol. It allows you to choose which linking app should handle your OpenXR graphics. If you have multiple linking apps installed (to try out different options), you can select the one to start the game with here. This setting is a global option for *all* apps using OpenXR on your PC, not just UEVR Easy Injector. 
 
-</details>
-
-<details>
-
-<summary>🔽 9. Launch game</summary>
-
-### 9. Launch game
-
+## 9. Launch game
 Make sure your linking app is running and you are connected to your PC via your VR headset *before* continuing.  
 
 There are two types of games (UEVR Easy will indicate which): 
@@ -177,14 +116,7 @@ There are two types of games (UEVR Easy will indicate which):
 
 Initially, UEVR will display a menu in-game. You can hide the menu by pressing the "Insert" ("Ins") key on your keyboard or by pressing both joystick buttons simultaneously.
 
-</details>
-
-<details>
-
-<summary>🔽 10. Mastering in-game controls</summary>
-
-### 10. Mastering in-game controls
-
+## 10. Mastering in-game controls
 If the game supports gamepads, your VR controllers will function like a gamepad. You can typically use the joystick and the "A" button to navigate the menus:
 
 | VR controller button... | ...will function as game button |
@@ -206,16 +138,7 @@ If the game supports gamepads, your VR controllers will function like a gamepad.
 Note the counterintuitive mapping of the buttons B/X/Y.
 You can typically also play with the keyboard and mouse, using just the VR 3D view.
 
-</details>
-
-<details>
-
-<summary>🔽 11. Connecting your controllers motion controls</summary>
-
-### 11. Connecting your controllers motion controls
-
+## 11. Connecting your controllers motion controls
 Connecting your 3D controllers to e.g. your hand or weapons greatly increases the immersion (6DOF - six degrees of freedom).
 However, if you have no preset profile from the "Search online" database, it is pretty complex to set up.
 See some [Youtube in depth tutorials](https://www.youtube.com/watch?v=4ccaX8Hr1JU) for more details.
-
-</details>
