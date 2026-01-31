@@ -1,15 +1,22 @@
 ## How to get started with UEVR Easy Injector
 New to UEVR and want to play common flatscreen PC games in Virtual Reality using your e.g. Meta Quest headset? Here's how to get started. Click on the section headings to open the details.
 
-<details><summary>🔽 1. Ensure your PC can handle it</summary>
+<details>
+
+<summary>🔽 1. Ensure your PC can handle it</summary>
 
 ### 1. Ensure your PC can handle it  
+
 VR requires rendering at a very high resolution, and the experience is sensitive to low frame rates. Therefore, you need a modern, powerful PC. Your graphics card should be particularly strong and have ample VRAM for the high resolution. If the game you want to play does not achieve high frame rates at high resolutions in normal flatscreen, it is unlikely to perform well in VR.
+
 </details>
 
-<details><summary>🔽 2. Install and prepare your game</summary>
+<details>
+
+<summary>🔽 2. Install and prepare your game</summary>
 
 ### 2. Install and prepare your game
+
 #### 2.1. Unreal games only
 First, check if the game runs on Unreal Engine version 4 or higher, which is required for UEVR (very latest versions of the engine might also causes problems). The simplest way to do this is by google the game's name along with "Unreal Engine version". UEVR Easy Injector currently supports Steam, Epic, GOG and XBox, as well as installations found in Windows uninstall. Install the game via these stores just normally.  
 Pirated versions are not supported.
@@ -26,11 +33,15 @@ If the game supports it, adjust these in-game graphic settings:
 Since VR is very performance hungry, DLSS is usually needed. Many espc. older games run on outdated DLSS versions though.
 To optimize, try to replace the games DLSS DLLs with latest version using the [DLSS Swapper Tool](https://github.com/beeradmoore/dlss-swapper/releases). If possible, set the DLSS Preset to "K", also using DLSS Swapper (or NVidia native app).  
 You might be tempted to try DLSS 4.5 (presets L for Ultra-Performance and M for all the other levesl), but UEVR tests have shown them to be slower (the older the Nvidia card) and less helpful to upscale high VR resolutions usually not found on desktops. The big upgrade is from DLSS V3 to V4. Test with V4.5, but you will probabaly stick with K for best performance.
+
 </details>
 
-<details><summary>🔽 3. Ensure you have a fast network connection to your headset</summary>
+<details>
+
+<summary>🔽 3. Ensure you have a fast network connection to your headset</summary>
 
 ### 3. Ensure you have a fast network connection to your headset
+
 Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth. Your options ordered best to worst:
 
 #### 3.1 Display port
@@ -54,9 +65,12 @@ Though it sounds like a better bet to simply always use USB, it will reduce your
 
 </details>
 
-<details><summary>🔽 4. Choose and install an app to link your headset to your PC</summary>
+<details>
+
+<summary>🔽 4. Choose and install an app to link your headset to your PC</summary>
 
 ### 4. Choose and install an app to link your headset to your PC
+
 While there are several smaller ones out there, the most widely used and user-friendly ones are:
 
 | App Name | Price | Network | Image quality |
@@ -96,26 +110,35 @@ If you PC struggles, note what frame rate it can push without SSW (use the optio
 
 </details>
 
-<details><summary>🔽 5. Install UEVR Easy Injector</summary>
+<details>
+
+<summary>🔽 5. Install UEVR Easy Injector</summary>
 
 ### 5. Install UEVR Easy Injector
+
 The latest releases can always be found here on GitHub:  
 <a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest UEVR Easy Injector release</a>  
 You do not need to download UEVR Classic. UEVR Easy comes with the UEVR backend and does not use the classic installation.
 
 </details>
 
-<details><summary>🔽 6. UEVR Easy Injector - Library page</summary>
+<details>
+
+<summary>🔽 6. UEVR Easy Injector - Library page</summary>
 
 ### 6. UEVR Easy Injector - Library page
+
 When you start UEVR Easy Injector, you'll see a list of installed Unreal Engine Steam/GOG/Xbox/Epic games that __might__ work. Simply click a game to start.  
 You can also click on "Profile catalog" at the bottom to see a list for profiles available in the database. You are not restricted to these, you can install any profile from the internet the usual manual way.
 
 </details>
 
-<details><summary>🔽 7. UEVR Easy Injector - Download a profile</summary>
+<details>
+
+<summary>🔽 7. UEVR Easy Injector - Download a profile</summary>
 
 ### 7. UEVR Easy Injector - Download a profile
+
 To ensure UEVR handles the game correctly and connects your controller to in-game elements like weapons, you'll need a profile. Simply click "Search online" on this page to access a list of community-submitted and tested profiles. Select a suitable profile (if available) and click the "Install" button.
 
 You can also download and install any profile from e.g. Discord or other websites manually, just like you would do with UEVR Classic.
@@ -126,18 +149,24 @@ Profiles you download often include instructions for proper use. Some may requir
 
 </details>
 
-<details><summary>🔽 8. Select protocol</summary>
+<details>
+
+<summary>🔽 8. Select protocol</summary>
 
 ### 8. Select protocol
+
 You will find an OpenVR/XR switcher for the runtime above the start button bar. But what is OpenXR?  
 There are two protocol standards for transferring VR graphics data: OpenVR and OpenXR. OpenVR is the older standard, used by some older headsets and initially by SteamVR.  
 OpenXR is the newer and recommended protocol. It allows you to choose which linking app should handle your OpenXR graphics. If you have multiple linking apps installed (to try out different options), you can select the one to start the game with here. This setting is a global option for *all* apps using OpenXR on your PC, not just UEVR Easy Injector. 
 
 </details>
 
-<details><summary>🔽 9. Launch game</summary>
+<details>
+
+<summary>🔽 9. Launch game</summary>
 
 ### 9. Launch game
+
 Make sure your linking app is running and you are connected to your PC via your VR headset *before* continuing.  
 
 There are two types of games (UEVR Easy will indicate which): 
@@ -150,9 +179,12 @@ Initially, UEVR will display a menu in-game. You can hide the menu by pressing t
 
 </details>
 
-<details><summary>🔽 10. Mastering in-game controls</summary>
+<details>
+
+<summary>🔽 10. Mastering in-game controls</summary>
 
 ### 10. Mastering in-game controls
+
 If the game supports gamepads, your VR controllers will function like a gamepad. You can typically use the joystick and the "A" button to navigate the menus:
 
 | VR controller button... | ...will function as game button |
@@ -176,9 +208,12 @@ You can typically also play with the keyboard and mouse, using just the VR 3D vi
 
 </details>
 
-<details><summary>🔽 11. Connecting your controllers motion controls</summary>
+<details>
+
+<summary>🔽 11. Connecting your controllers motion controls</summary>
 
 ### 11. Connecting your controllers motion controls
+
 Connecting your 3D controllers to e.g. your hand or weapons greatly increases the immersion (6DOF - six degrees of freedom).
 However, if you have no preset profile from the "Search online" database, it is pretty complex to set up.
 See some [Youtube in depth tutorials](https://www.youtube.com/watch?v=4ccaX8Hr1JU) for more details.
