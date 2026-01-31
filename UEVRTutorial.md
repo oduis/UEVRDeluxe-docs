@@ -6,7 +6,9 @@ VR requires rendering at a very high resolution, and the experience is sensitive
 
 ### 2. Install and prepare your game
 #### 2.1. Unreal games only
-First, check if the game runs on Unreal Engine version 4 or higher, which is required for UEVR (very latest versions of the engine might also causes problems). The simplest way to do this is by searching the game's name along with "Unreal Engine version" on Google or Bing. UEVR Easy Injector currently supports Steam, Epic, GOG and XBox. Install the game via these stores just normally. Privated versions installed outside of these stores are not supported.
+First, check if the game runs on Unreal Engine version 4 or higher, which is required for UEVR (very latest versions of the engine might also causes problems). The simplest way to do this is by google the game's name along with "Unreal Engine version". UEVR Easy Injector currently supports Steam, Epic, GOG and XBox, as well as installations found in Windows uninstall. Install the game via these stores just normally.  
+Pirated versions are not supported.
+
 #### 2.2. Common ingame settings
 If the game supports it, adjust these in-game graphic settings:
 - Chromatic aberration: OFF
@@ -17,20 +19,27 @@ If the game supports it, adjust these in-game graphic settings:
 #### 2.3. Optimize DLSS (Nvidia cards only)
 Since VR is very performance hungry, DLSS is usually needed. Many espc. older games run on outdated DLSS versions though.
 To optimize, try to replace the games DLSS DLLs with latest version using the [DLSS Swapper Tool](https://github.com/beeradmoore/dlss-swapper/releases). If possible, set the DLSS Preset to "K", also using DLSS Swapper (or NVidia native app).  
-You might be tempted to try DLSS 4.5 (presets M and L), but UEVR tests have shown them to be slower and less helpful to upscale high VR resolutions usually not found on desktops. Stick with K.
+You might be tempted to try DLSS 4.5 (presets L for Ultra-Performance and M for all the other levesl), but UEVR tests have shown them to be slower (the older the Nvidia card) and less helpful to upscale high VR resolutions usually not found on desktops. The big upgrade is from DLSS V3 to V4. Test with V4.5, but you will probabaly stick with K for best performance.
 
 ### 3. Ensure you have a fast network connection to your headset
-Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth.
+Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth. Your options ordered best to worst:
 
-- If you have a display port connected headset - best option
-- If you have a **good Wifi and LAN connection**  - go for WIFI connection
-	- Is your PC connected to your router via LAN?
-	- Is your network router modern (preferably WIFI6/6E/7)?  
+#### 3.1 Display port
+If you have a display port connected headset - best option. No compression. Not available for Meta Quest.
+
+#### 3.2 LAN connection (via adapter)
+Since the Meta Quest is based on Android, it unofficially supports some standard Realtek 1GB USB LAN adapters [like this one](https://www.amazon.de/dp/B0C3GHBLB6). 2.5GB version often also work, but are reported to be restricted to 1GB.  
+It is advisable to buy a combined power supply and LAN adapter, so your headset it both charged and connected. To not have a dongle hanging on your head a good USB-C extension cable is also helpful.
+
+#### 3.3 WIFI
+If WIFI is a good option if:
+- your PC is connected to your router via LAN
+- your network router is modern (preferably WIFI6/6E/7)  
 	(The Windows built-in Hotspot feature often has reliability issues under high CPU load and suboptimal Wifi card settings, so it is not a replacement for a modern router)
-	- Is your network channel idle and not congested with other neighborhood networks or other devices using much bandwith? 
+- your network channel is idle and not congested with other neighborhood networks or other devices using much bandwith
 
-- **no good network** - go for **USB cable** connection  
-Though it sounds like a better bet to simply always use USB, it will reduce your options. Better go for WIFI if you can.
+#### 3.4. Fallback: USB
+Though it sounds like a better bet to simply always use USB, it will reduce your options.
 
 ### 4. Choose and install an app to link your headset to your PC
 While there are several smaller ones out there, the most widely used and user-friendly ones are:
@@ -49,18 +58,22 @@ Except for Meta Quest Link (only PC) the installation requires an app both on PC
 
 #### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
 In the PC app:
-* __Codec__: The "Auto" setting usually makes asensible selection.  
-The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast Wi-Fi connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.
-AV1 and HEVC codes also come in 10-bit color variants (compared to the standard 8-bit). These deliver less banding and more detail, mostly visible in dark scenes (the game renders in 8 Bit, the 10 bit is for encoding, which is mostly visible on dark content). However this comes at the cost of higher VRAM usage.   
+* __Codec__: The "Auto" setting usually makes a sensible selection.  
+The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast Wi-Fi connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.  
+AV1 and HEVC codes also come in 10-bit color variants (compared to the standard 8-bit). These deliver less banding and more detail, mostly visible in dark scenes (the game renders in 8 Bit, the 10 bit is for encoding, which is mostly visible in dark content). However this comes at the cost of higher VRAM usage.   
 There is much less performance difference between the codecs when using modern NVidia cards, since they have seperate hardware encoding paths. HVEC and H.264 make no difference, AVI is a bit slower.
 * __Encrypt local traffic__: Switch this OFF
-* __Sharpening__: on the "Advanced" tab, enable the new sharpening, but try low settings like 10% first. This sharpening is pre-enocding, and it helps with small details more than sharpening in the headset.
+* __Sharpening__: on the "Advanced" tab, enable the new sharpening, but try low settings like 5% first. This sharpening is pre-enocding, and it helps with small details more than sharpening in the headset.
+* __VDXR Rendering Resolution__: Stick to 100%. Tends to introduce blurriness.
 
 In the headset app's streaming settings:
 The performance panel in Virtual Desktop or on your Meta Quest headset displays the Wi-Fi speed, but this represents the theoretical maximum link rate. In practice, you can expect your actual usable speed to be about one-third of that value.
+
+* __Graphics presets__: This determines the rendering resolution and is the most important parameter for both sharpness and performance. Try "Ultra" if possible as "Godlike" typically yield diminishing returns.  
+It is better to keep this higher and instead lower the DLSS setting (e.g. to Ultra Performance) to keep up the performance.
 * __VR frame rate__: Set a bit higher than your PC can handle to reduce flickering.
 * Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a great on device AI upscaling. Sharper image, no downsides.
-* __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast, often looking better. But try to sharpen on the PC app first, then add additional sharpening here if needed. It largely depends on the game.
+* __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast, often looking better. But try to sharpen on the PC app first (helping with encoding), then only add additional sharpening here if needed. It largely depends on the game.
 * __Synchronous Spacewarp (SSW)__: Lets your PC just render at half of the desired rate, interpolating the frames inbetween on your headset, also using half the network bandwidth. Feels much smoother, but be aware that this may cause flickering in elements like health bar HUD overlays that do not move the same way as the world view.  
 So if your PC is powerful enough, OFF will give you better quality.  
 If you PC struggles, note what frame rate it can push without SSW (use the option "Show performance overlay" in the streaming options). Now set the frame __VR frame rate__ to about double that safe PC framerate and enable SSW. If you leave you VR frame rate too low (e.g. 60Hz), while your PC can push eg. 45 Hz, your PC will render lower than it could. That leads to noticable input lag, though the image seems to be smooth.
@@ -99,7 +112,6 @@ There are two types of games (UEVR Easy will indicate which):
 - Other games require injection after the game has already started, usually when you are inside the 3D world. In these cases, clicking the launch button will only start the game without injection. Once you are in-game, press the inject button again. Alternatively, you can use the global hotkey Ctrl+Alt+U to inject without switching windows.
 
 Initially, UEVR will display a menu in-game. You can hide the menu by pressing the "Insert" ("Ins") key on your keyboard or by pressing both joystick buttons simultaneously.
-
 
 ### 10. Mastering in-game controls
 If the game supports gamepads, your VR controllers will function like a gamepad. You can typically use the joystick and the "A" button to navigate the menus:
