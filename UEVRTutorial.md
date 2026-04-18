@@ -61,9 +61,9 @@ Except for Meta Quest Link (only PC) the installation requires an app both on PC
 ### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
 In the PC app:
 * __Codec__: The "Auto" setting usually makes a sensible selection.  
-The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast Wi-Fi connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.  
+The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.  
 AV1 and HEVC codes also come in 10-bit color variants (compared to the standard 8-bit). These deliver less banding and more detail, mostly visible in dark scenes (the game renders in 8 Bit, the 10 bit is for encoding, which is mostly visible in dark content). However this comes at the cost of higher VRAM usage.   
-There is much less performance difference between the codecs when using modern NVidia cards, since they have seperate hardware encoding paths. HVEC and H.264 make no difference, AVI is a bit slower.
+There is much less performance difference between the codecs when using modern NVidia cards, since they have seperate hardware encoding paths. HVEC and H.264 make little difference, AVI is a bit slower.
 * __Encrypt local traffic__: Switch this OFF
 * __Sharpening__: on the "Advanced" tab, enable the new sharpening, but try low settings like 5% first. This sharpening is pre-enocding, and it helps with small details more than sharpening in the headset.
 * __VDXR Rendering Resolution__: Stick to 100%. Tends to introduce blurriness.
@@ -75,6 +75,7 @@ The performance panel in Virtual Desktop or on your Meta Quest headset displays 
 It is better to keep this higher and instead lower the DLSS setting (e.g. to Ultra Performance) to keep up the performance.
 * __VR frame rate__: Set a bit higher than your PC can handle to reduce flickering.
 * Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a great on device AI upscaling. Sharper image, no downsides.
+* __Bandwidth__: The higher the bandwidth, the better the picture quality, especially in irregular visual like foilage. However if you exceed what the Wifi/LAN adapter can handle, you will have stutterings. Higher bandwith also come with higher processing load, which again leads to lower frame rates and latency.  
 * __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast, often looking better. But try to sharpen on the PC app first (helping with encoding), then only add additional sharpening here if needed. It largely depends on the game.
 * __Synchronous Spacewarp (SSW)__: Lets your PC just render at half of the desired rate, interpolating the frames inbetween on your headset, also using half the network bandwidth. Feels much smoother, but be aware that this may cause flickering in elements like health bar HUD overlays that do not move the same way as the world view.  
 So if your PC is powerful enough, OFF will give you better quality.  
