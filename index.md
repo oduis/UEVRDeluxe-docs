@@ -1,7 +1,13 @@
 Play numerous Unreal Engine games in Virtual Reality, such as with Meta Quest headsets.
 This app takes [Praydog’s brilliant (UEVR)](https://github.com/praydog/UEVR) magic module, but replaces the UI part with a user-friendly, new one.   
-It adds features like an **online profiles database, voice commands, user friendly profiles editor and UEVR Nightly updates with one click**.  
-UEVR for the casual user, mass market compatible  ;-)  
+It adds features not found in UEVR classic, like:
+- an online profiles database
+- A selection of alternative backends (e.g., JoeyHodge and PurDark/AFW), offering better compatibility and higher performance than UEVR Classic
+- Automatic updates for UEVR backends
+- voice commands
+- A user friendly profiles editor
+
+UEVR for the casual user, mass market compatible :smiley:  
 
 <a href="https://github.com/oduis/UEVRDeluxe/releases" class="download-link">Download latest release</a>
 
@@ -23,6 +29,8 @@ Includes the most commonly used options with descriptions to help you get starte
 
 ![Profile editor](assets/EditProfile.png)
 
+It also contains helpful options that are not found in the UI of UEVR classic.
+
 ## Easy to find a Profile and start the Game, including XR Runtime Switcher
 The new UEVR profile database includes documentation for each profile. No more searching on Discord or outdated profile websites
 (but you can still use them with UEVR Easy Injector, just like you would use them with UEVR Classic). 
@@ -40,7 +48,7 @@ Configure easy to use voice commands per game. Little performance overhead on RA
 ## Frequently Asked Questions
 ### Does it cost anything?
 No, this is free (for non commercial use). However, you are encouraged to support the author of UEVR here: [Praydog's Patreon](https://patreon.com/praydog).
-### Do I need UEVR Injector installed?
+### Do I need UEVR Injector Classic installed?
 No, it is not necessary. However, it does no harm to have it installed in parallel, as long as it is not used on the same games.
 ### Can I use game profiles not in the database (e.g. installed manually from Discord)?
 Sure, just like with UEVR classic.
@@ -50,3 +58,4 @@ Shut down Steam and Restart it. Then rescan in UEVR Easy Injector. Alternatively
 Follow [this guide](SubmitProfile.md)
 ### What UEVR version is it based on? Can I use another?
 Currently the current nightly version that looks stable when published. But you can just click on Update button to download the latest nightly or older nightlies automatically. Start UEVR Easy as admin for this to work.
+JoeHodge and PureDark UEVR versions are also supported.
