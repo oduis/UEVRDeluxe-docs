@@ -2,7 +2,7 @@ Play numerous Unreal Engine games in Virtual Reality, such as with Meta Quest he
 This app takes [Praydog’s brilliant (UEVR)](https://github.com/praydog/UEVR) magic module, but replaces the UI part with a user-friendly, new one.   
 It adds features not found in UEVR classic, like:
 - an online profiles database
-- A selection of alternative backends (e.g., JoeyHodge and PurDark/AFW), offering better compatibility and higher performance than UEVR Classic
+- A selection of alternative backends (e.g., JoeyHodge and PurDark/AFW, Dortamur), offering better compatibility and higher performance than UEVR Classic
 - Automatic updates for UEVR backends
 - voice commands
 - A user friendly profiles editor
@@ -23,6 +23,11 @@ One click update to latest UEVR nightly backend version.
 Containing many tested profiles from Discord and other sources, constantly updated. Simple one click installation.  
 
 ![Profile database](assets/ProfileCatalog.png)
+
+## Multiple UEVR Backends
+Update and switch among them easily on a per games basis.
+
+![UEVR Backends](assets/UEVRBackends.png)
 
 ## Easy Profile Editor
 Includes the most commonly used options with descriptions to help you get started:
