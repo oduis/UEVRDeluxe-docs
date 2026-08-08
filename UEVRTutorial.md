@@ -28,8 +28,8 @@ Transferring VR 3D display data from your PC to your headset requires a lot of b
 If you have a display port connected headset - best option. No compression. Not available for Meta Quest.
 
 ### 3.2 LAN connection (via adapter)
-Since the Meta Quest operating system is based on Android, it unofficially supports many standard Realtek 1GB USB LAN adapters [like this one](https://www.amazon.de/dp/B0C3GHBLB6). Some 2.5GB adapters may also work, but are typically limited to 1GB speeds.  
-For convenience, consider purchasing a combined power supply and LAN adapter, so your headset can charge while connected to the network at the same time. To avoid having a dongle hanging from your headset, a high-quality USB-C extension cable is recommended.  
+Since the Meta Quest operating system is based on Android, it unofficially supports many standard Realtek 1GB USB LAN adapters. Some 2.5GB adapters may also work, but are typically limited to 1GB speeds. Check the description of the adapaters on what chips they use.
+For convenience, consider purchasing a combined power supply and LAN adapter with separte power delivery, so your headset can charge while connected to the network at the same time. To avoid having a dongle hanging from your headset, a high-quality USB-C extension cable is recommended.  
 There is no specific setting in Meta Quest to enable USB LAN adapters. Simply turn off Wi-Fi in the settings, power down the headset, connect the USB LAN adapter, and then power the headset back on. It should connect to the network automatically, although some features such as app updates are disabled.  
 If you experience connection issues, check whether the LAN adapter’s LEDs are blinking. Some adapters may enter sleep mode and not show any activity. In such cases, try temporarily connecting the USB LAN adapter to a PC to verify network connectivity and wake it up. If it works on the PC, reconnect it to the Quest.
 
@@ -39,48 +39,51 @@ If WIFI is a good option if:
 - your network router is modern (preferably WIFI6/6E/7)  
 	(The Windows built-in Hotspot feature often has reliability issues under high CPU load and suboptimal Wifi card settings, so it is not a replacement for a modern router)
 - your network channel is idle and not congested with other neighborhood networks or other devices using much bandwith
+- you value a no cables setup
 
-### 3.4. Fallback: USB
-Though it sounds like a better bet to simply always use USB, it will reduce your options.
+### 3.4. USB cable
+Virtual Desktop now supports connecting your Meta Quest headset to your PC with a USB cable. This provides a stable, low-latency connection without relying on Wi-Fi and is the recommended wired option for Quest headsets.
 
 ## 4. Choose and install an app to link your headset to your PC
 While there are several smaller ones out there, the most widely used and user-friendly ones are:
 
 | App Name | Price | Network | Image quality |
 |----------|-------|---------|---------------|
-| [Virtual Desktop](https://www.vrdesktop.net/) | One time purchase | WIFI/LAN only | Best | 
+| [Virtual Desktop](https://www.vrdesktop.net/) | One time purchase | WIFI/LAN and USB | Best | 
 | [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) | Free | WIFI/LAN only | Good (best if you have a native SteamVR headset) |
 | [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/) | Free  | WIFI (Airlink) and USB | Good |
 
 If your network is great, and your platform is supported, I highly recommend [Virtual Desktop (VD)](https://www.vrdesktop.net/), espc. on Quest.
 It has the best image encoding, upscaling options and frame generation on headset, resulting in the best image quality.  
-If your network is weak and you are a Meta Quest user, use USB on [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/).  
+If your network is weak and you are a Meta Quest user, use Virtual Desktop's USB cable mode. It provides a better wired experience than [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/), which can be kept as a free fallback.  
 If you search for a free option that is also know to be very stable, use [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). This is also the best options if you got a SteamVR native headset.
 Except for Meta Quest Link (only PC) the installation requires an app both on PC as on the headset.
 
 ### 4.1 Tipps for configuring Virtual Desktop (the recommended option)
 In the PC app:
+* __Automatically adjust bitrate__: Performs a quick network test on connecting and limits the maximum network bandwidth accordingly. ALWAYS leave this checked. It might seem too conservative at times, but the game will usually have random stutters if you override this recommended maximum.
 * __Codec__: The "Auto" setting usually makes a sensible selection.  
 The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.  
 AV1 and HEVC codes also come in 10-bit color variants (compared to the standard 8-bit). These deliver less banding and more detail, mostly visible in dark scenes (the game renders in 8 Bit, the 10 bit is for encoding, which is mostly visible in dark content). However this comes at the cost of higher VRAM usage.   
 There is much less performance difference between the codecs when using modern NVidia cards, since they have seperate hardware encoding paths. HVEC and H.264 make little difference, AVI is a bit slower.
+* __2-Pass encoding__: Delivers better compression. Though the tooltip warns about high overhead, I found the overheader in Nvidia 4000 to be zero, since the seperate hardware encoding chip was not saturated.
 * __Encrypt local traffic__: Switch this OFF
-* __Sharpening__: on the "Advanced" tab, enable the new sharpening, but try low settings like 5% first. This sharpening is pre-enocding, and it helps with small details more than sharpening in the headset.
-* __VDXR Rendering Resolution__: Stick to 100%. Tends to introduce blurriness.
+* __Additional Sharpening__: on the "Advanced" tab, this sharpening is pre-enocding, and it helps with small details on low bandwidths more than sharpening in the headset.
+* __VDXR Rendering Resolution__: Stick to 100%. Tends to introduce blurriness on any other value.
 
 In the headset app's streaming settings:
 The performance panel in Virtual Desktop or on your Meta Quest headset displays the Wi-Fi speed, but this represents the theoretical maximum link rate. In practice, you can expect your actual usable speed to be about one-third of that value.
 
-* __Graphics presets__: This determines the rendering resolution and is the most important parameter for both sharpness and performance. Try "Ultra" if possible as "Godlike" typically yield diminishing returns.  
+* __Graphics presets__: This determines the rendering resolution and is the most important parameter for both sharpness and performance. On Quest, "Godlike" is the full resolution for maximum details considerung both the panels resolution as well as the optical distorion. Try "Ultra", as "Godlike" typically yield diminishing returns. 
 It is better to keep this higher and instead lower the DLSS setting (e.g. to Ultra Performance) to keep up the performance.
-* __VR frame rate__: Set a bit higher than your PC can handle to reduce flickering.
+* __VR frame rate__: Set a just a bit higher than your PC can handle to reduce flickering.
 * Enable the [Snapdragon Super Resolution](https://www.qualcomm.com/developer/blog/2023/04/using-super-resolution-boost-resolution-virtual-reality) for a great on device AI upscaling. Sharper image, no downsides.
-* __Bandwidth__: The higher the bandwidth, the better the picture quality, especially in irregular visual like foilage. However if you exceed what the Wifi/LAN adapter can handle, you will have stutterings. Higher bandwith also come with higher processing load, which again leads to lower frame rates and latency.  
-* __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast, often looking better. But try to sharpen on the PC app first (helping with encoding), then only add additional sharpening here if needed. It largely depends on the game.
+* __Bandwidth__: The higher the bandwidth, the better the picture quality, especially in irregular visual like foilage. However if you exceed what the Wifi/LAN adapter can handle, you will have stutterings. Higher bandwith also come with higher processing load, which again leads to lower frame rates and more latency (and reduced battery life).  
+* __Sharpening__: While Snapdragon super resolution increases fine detail and upscailing, this setting affects the perceived overall contrast, often looking better, if needed at all. But try to sharpen on the PC app first (helping with encoding), then only add additional sharpening here if needed. It largely depends on the game.
 * __Synchronous Spacewarp (SSW)__: Lets your PC just render at half of the desired rate, interpolating the frames inbetween on your headset, also using half the network bandwidth. Feels much smoother, but be aware that this may cause flickering in elements like health bar HUD overlays that do not move the same way as the world view.  
 So if your PC is powerful enough, OFF will give you better quality.  
 If you PC struggles, note what frame rate it can push without SSW (use the option "Show performance overlay" in the streaming options). Now set the frame __VR frame rate__ to about double that safe PC framerate and enable SSW. If you leave you VR frame rate too low (e.g. 60Hz), while your PC can push eg. 45 Hz, your PC will render lower than it could. That leads to noticable input lag, though the image seems to be smooth.
-* __Color Vibrance__: Consider enabling "Increase color vibrance" and disabling "Increase nominal range" to prevent blown-out shadows.
+* __Color Vibrance__/__Increase nominal range__: Consider enabling "Increase color vibrance" on non-OLED headsets like Quest and disabling "Increase nominal range" to prevent blown-out shadows.
 
 ## 5. Install UEVR Easy Injector
 
