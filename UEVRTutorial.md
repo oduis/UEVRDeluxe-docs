@@ -19,7 +19,7 @@ If the game supports it, adjust these in-game graphic settings:
 ### 2.3. Optimize DLSS (Nvidia cards only)
 Since VR is very performance hungry, DLSS is usually needed. Many espc. older games run on outdated DLSS versions though.
 To optimize, try to replace the games DLSS DLLs with latest version using the [DLSS Swapper Tool](https://github.com/beeradmoore/dlss-swapper/releases). Try DLSS Preset "K" first, also using DLSS Swapper (or NVidia native app).  
-You can try DLSS 4.5 (presets L for Ultra-Performance and M for all the other levels), but it largely depends on your GPU and setup if it is better and faster than K. The newer you GPU, the better the chance it is an improvement. The big upgrade is from DLSS V3 to V4 (profile K).
+DLSS 4.5 adds preset L for Ultra Performance and preset M for Performance; preset K is from DLSS 4 and is used for Balanced and Quality. The model itself runs slower with L than with M, and slower with M than with K. However, the lower rendering workload means Ultra Performance with L can deliver more game performance than Performance with M, which can deliver more than Balanced with K. Whether DLSS 4.5 is better for your setup depends largely on your GPU; newer GPUs are more likely to benefit. The big upgrade is from DLSS V3 to V4 (profile K).
 
 ## 3. Ensure you have a fast network connection to your headset
 Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth. Your options ordered best to worst:
