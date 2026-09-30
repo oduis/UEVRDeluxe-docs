@@ -18,8 +18,8 @@ If the game supports it, adjust these in-game graphic settings:
 
 ### 2.3. Optimize DLSS (Nvidia cards only)
 Since VR is very performance hungry, DLSS is usually needed. Many espc. older games run on outdated DLSS versions though.
-To optimize, try to replace the games DLSS DLLs with latest version using the [DLSS Swapper Tool](https://github.com/beeradmoore/dlss-swapper/releases). If possible, set the DLSS Preset to "K", also using DLSS Swapper (or NVidia native app).  
-You might be tempted to try DLSS 4.5 (presets L for Ultra-Performance and M for all the other levesl), but UEVR tests have shown them to be slower (the older the Nvidia card) and less helpful to upscale high VR resolutions usually not found on desktops. The big upgrade is from DLSS V3 to V4. Test with V4.5, but you will probabaly stick with K for best performance.
+To optimize, try to replace the games DLSS DLLs with latest version using the [DLSS Swapper Tool](https://github.com/beeradmoore/dlss-swapper/releases). Try DLSS Preset "K" first, also using DLSS Swapper (or NVidia native app).  
+You can try DLSS 4.5 (presets L for Ultra-Performance and M for all the other levels), but it largely depends on your GPU and setup if it is better and faster than K. The newer you GPU, the better the chance it is an improvement. The big upgrade is from DLSS V3 to V4 (profile K).
 
 ## 3. Ensure you have a fast network connection to your headset
 Transferring VR 3D display data from your PC to your headset requires a lot of bandwidth. Your options ordered best to worst:
@@ -55,7 +55,7 @@ While there are several smaller ones out there, the most widely used and user-fr
 
 If your network is great, and your platform is supported, I highly recommend [Virtual Desktop (VD)](https://www.vrdesktop.net/), espc. on Quest.
 It has the best image encoding, upscaling options and frame generation on headset, resulting in the best image quality.  
-If your network is weak and you are a Meta Quest user, use Virtual Desktop's USB cable mode. It provides a better wired experience than [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/), which can be kept as a free fallback.  
+If your network is weak, you are a Meta Quest user, use Virtual Desktop's USB cable mode. It provides a better wired experience than [Meta Quest Link](https://www.meta.com/en-us/help/quest/pcvr/), which can be kept as a free fallback.  
 If you search for a free option that is also know to be very stable, use [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). This is also the best options if you got a SteamVR native headset.
 Except for Meta Quest Link (only PC) the installation requires an app both on PC as on the headset.
 
@@ -66,7 +66,7 @@ In the PC app:
 The newer the codec (AV1 is newer than HEVC, which is newer than H.264), the better the compression efficiency. However vice versa, if you have a very fast connection and don't require much compression, older encoders like the H.264+ (which allows higher bit rates than the H.264) can provide better image quality.  
 AV1 and HEVC codes also come in 10-bit color variants (compared to the standard 8-bit). These deliver less banding and more detail, mostly visible in dark scenes (the game renders in 8 Bit, the 10 bit is for encoding, which is mostly visible in dark content). However this comes at the cost of higher VRAM usage.   
 There is much less performance difference between the codecs when using modern NVidia cards, since they have seperate hardware encoding paths. HVEC and H.264 make little difference, AVI is a bit slower.
-* __2-Pass encoding__: Delivers better compression. Though the tooltip warns about high overhead, I found the overheader in Nvidia 4000 to be zero, since the seperate hardware encoding chip was not saturated.
+* __2-Pass encoding__: Delivers better compression. Though the tooltip warns about high overhead, I found the performance overheade in Nvidia 4000 to be zero, since the seperate hardware encoding chip was not saturated. It added few milliseconds of latency though. Since the compression gains are relatively low, only enable if you have to use a low bitrate.
 * __Encrypt local traffic__: Switch this OFF
 * __Additional Sharpening__: on the "Advanced" tab, this sharpening is pre-enocding, and it helps with small details on low bandwidths more than sharpening in the headset.
 * __VDXR Rendering Resolution__: Stick to 100%. Tends to introduce blurriness on any other value.
